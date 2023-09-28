@@ -7,7 +7,8 @@
     "clean": "lerna run compile",
     "watch": "lerna run watch",
     "start": "lerna run start",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "analyze": "lerna run analyze"
   },
   "keywords": [],
   "author": "OpenTelemetry Authors",
