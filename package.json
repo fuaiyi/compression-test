@@ -1,0 +1,12 @@
+{
+  "name": "compress-test",
+  "version": "0.1.0",
+  "description": "OpenTelemetry compress-test.",
+  "scripts": {},
+  "keywords": [],
+  "author": "OpenTelemetry Authors",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "lerna": "^7.3.0"
+  }
+}
