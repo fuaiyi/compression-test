@@ -13,6 +13,12 @@
     },
     "build": {
       "dependsOn": ["^compile"]
+    },
+    "compile": {
+      "dependsOn": ["^compile"]
+    },
+    "clean": {
+      "dependsOn": ["^clean"]
     }
   }
 }

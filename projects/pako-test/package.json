@@ -11,7 +11,12 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
-    "source-map-explorer": "^2.5.3"
+    "source-map-explorer": "^2.5.3",
+    "@opentelemetry/api-logs": "^0.43.0",
+    "@opentelemetry/sdk-logs": "^0.43.0",
+    "@opentelemetry/exporter-logs-otlp-http": "^0.43.0",
+    "@opentelemetry/opentelemetry-browser-detector": "^0.43.0",
+    "@opentelemetry/resources": "^1.17.0"
   },
   "scripts": {
     "start": "react-scripts start",

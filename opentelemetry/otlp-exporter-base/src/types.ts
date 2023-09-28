@@ -19,7 +19,7 @@
  */
 export class OTLPExporterError extends Error {
   readonly code?: number;
-  override readonly name: string = 'OTLPExporterError';
+  override readonly name: string = "OTLPExporterError";
   readonly data?: string;
 
   constructor(message?: string, code?: number, data?: string) {
@@ -56,6 +56,6 @@ export interface OTLPExporterConfigBase {
 }
 
 export enum CompressionAlgorithm {
-  NONE = 'none',
-  GZIP = 'gzip',
+  NONE = "none",
+  GZIP = "gzip",
 }
