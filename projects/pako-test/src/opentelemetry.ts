@@ -21,7 +21,8 @@ loggerProvider.addLogRecordProcessor(
     new OTLPLogExporter({
       url: "https://tpstelemetry.tencent.com/v1/logs",
       headers: { "X-Tps-TenantID": "default" },
-      compression: CompressionAlgorithm.GZIP,
+      compression: CompressionAlgorithm.NONE,
+      // compression: CompressionAlgorithm.GZIP,
     })
   )
 );
