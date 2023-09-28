@@ -29,22 +29,9 @@
     "node": ">=14"
   },
   "scripts": {
-    "prepublishOnly": "npm run compile",
     "compile": "tsc --build tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
     "clean": "tsc --build --clean tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
-    "codecov:browser": "nyc report --reporter=json && codecov -f coverage/*.json -p ../../../",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
-    "tdd": "npm run test -- --watch-extensions ts --watch",
-    "tdd:browser": "karma start",
-    "test": "nyc ts-mocha -p tsconfig.json 'test/**/*.test.ts' --exclude 'test/browser/**/*.ts'",
-    "test:browser": "karma start --single-run",
-    "version": "node ../../../scripts/version-update.js",
-    "watch": "tsc --build --watch tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
-    "precompile": "cross-var lerna run version --scope $npm_package_name --include-dependencies",
-    "prewatch": "npm run precompile",
-    "peer-api-check": "node ../../../scripts/peer-api-check.js",
-    "codecov": "nyc report --reporter=json && codecov -f coverage/*.json -p ../../../"
+    "watch": "tsc --build --watch tsconfig.json tsconfig.esm.json tsconfig.esnext.json"
   },
   "keywords": [
     "opentelemetry",

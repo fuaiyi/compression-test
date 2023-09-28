@@ -2,7 +2,12 @@
   "name": "compress-test",
   "version": "0.1.0",
   "description": "OpenTelemetry compress-test.",
-  "scripts": {},
+  "scripts": {
+    "compile": "lerna run compile",
+    "clean": "lerna run compile",
+    "watch": "lerna run watch",
+    "build": "lerna run build"
+  },
   "keywords": [],
   "author": "OpenTelemetry Authors",
   "license": "Apache-2.0",
