@@ -6,11 +6,16 @@
     "compile": "lerna run compile",
     "clean": "lerna run compile",
     "watch": "lerna run watch",
+    "start": "lerna run start",
     "build": "lerna run build"
   },
   "keywords": [],
   "author": "OpenTelemetry Authors",
   "license": "Apache-2.0",
+  "workspaces": [
+    "projects/*",
+    "opentelemetry/*"
+  ],
   "devDependencies": {
     "lerna": "^7.3.0"
   }
